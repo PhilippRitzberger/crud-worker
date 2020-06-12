@@ -23,13 +23,13 @@ npm i --save crud-webworker
 Import crud-webworker:
 
 ```javascript
-const crudworker = require('crudworker')
+const crudworker = require('crud-worker')
 ```
 
 or
 
 ```javascript
-import crudworker from 'crudworker'
+import crudworker from 'crud-worker'
 ```
 
 
