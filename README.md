@@ -68,7 +68,7 @@ let body = { title: 'foo'}
 
 crudworker.patch('http://jsonplaceholder.typicode.com/posts/1', JSON.stringify(body))
     .then( (data) => {
-        console.log({res: JSON.parse(data)})
+        console.log({ data: JSON.parse(data)})
     })
 ```
 
@@ -78,7 +78,7 @@ And finally to **DELETE** data:
 
 ```javascript
 crudworker.delete('http://jsonplaceholder.typicode.com/users/1').then( (data) => {
-    console.log({ res: JSON.parse(data)})
+    console.log({ data: JSON.parse(data)})
 })
 ```
 
