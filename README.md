@@ -8,6 +8,6 @@ Currently supported 🥳:
   * PATCH
   * DELETE
 
-## Installation:
+## Install:
 
 ## Usage:
