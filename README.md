@@ -45,7 +45,7 @@ let body = {
 
 crudworker.post('http://jsonplaceholder.typicode.com/posts', JSON.stringify(body))
   	.then( (data) => {
-        console.log({res: JSON.parse(data)})
+        console.log({ data: JSON.parse(data)})
     })
 ```
 
