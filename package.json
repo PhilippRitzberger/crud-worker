@@ -1,0 +1,19 @@
+{
+  "name": "crud-worker",
+  "version": "1.0.0",
+  "description": "Crud-worker aims to wrap the basic CRUD-Rest requests inside of a Web Worker for multithreaded API calls 🚀.",
+  "main": "plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilippRitzberger/crud-worker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhilippRitzberger/crud-worker/issues"
+  },
+  "homepage": "https://github.com/PhilippRitzberger/crud-worker#readme"
+}
