@@ -29,7 +29,7 @@ const crudworker = require('crud-worker')
 or
 
 ```javascript
-import crudworker from 'crud-worker'
+import { crudworker } from 'crud-worker'
 ```
 
 
@@ -43,7 +43,7 @@ let body = {
       		userId: 1
     	 }
 
-crudworker.post('http://jsonplaceholder.typicode.com/posts', JSON.stringify(body))
+crudworker.post('https://jsonplaceholder.typicode.com/posts', JSON.stringify(body))
   	.then( (data) => {
         console.log({ data: JSON.parse(data)})
     })
@@ -54,7 +54,7 @@ crudworker.post('http://jsonplaceholder.typicode.com/posts', JSON.stringify(body
 To **GET** data, call the `get` function of `crudworker`:
 
 ```javascript
-crudworker.get('http://jsonplaceholder.typicode.com/users/1').then( (data) => {
+crudworker.get('https://jsonplaceholder.typicode.com/users/1').then( (data) => {
 	console.log({ data: JSON.parse(data)})
 })
 ```
@@ -66,7 +66,7 @@ To **PATCH** Data:
 ```javascript
 let body = { title: 'foo'}
 
-crudworker.patch('http://jsonplaceholder.typicode.com/posts/1', JSON.stringify(body))
+crudworker.patch('https://jsonplaceholder.typicode.com/posts/1', JSON.stringify(body))
     .then( (data) => {
         console.log({ data: JSON.parse(data)})
     })
@@ -77,7 +77,7 @@ crudworker.patch('http://jsonplaceholder.typicode.com/posts/1', JSON.stringify(b
 And finally to **DELETE** data:
 
 ```javascript
-crudworker.delete('http://jsonplaceholder.typicode.com/users/1').then( (data) => {
+crudworker.delete('https://jsonplaceholder.typicode.com/users/1').then( (data) => {
     console.log({ data: JSON.parse(data)})
 })
 ```
